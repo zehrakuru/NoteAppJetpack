@@ -17,10 +17,13 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.setValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.saveable.rememberSaveable
+import androidx.navigation.NavHostController
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun NavigationBottomBar() {
+fun NavigationBottomBar(
+    navController: NavHostController
+) {
     val items = listOf(
         BottomNavigationItem(
             title = "Home",
@@ -29,7 +32,7 @@ fun NavigationBottomBar() {
             hasNews = false
         ),
         BottomNavigationItem(
-            title = "Notes",
+            title = "Done",
             selectedIcon = Icons.Filled.Menu,
             unselectedIcon = Icons.Outlined.Menu,
             hasNews = false,
@@ -43,7 +46,12 @@ fun NavigationBottomBar() {
         items.forEachIndexed { index, item ->
             NavigationBarItem(
                 selected = selectedItemIndex == index,
-                onClick = { selectedItemIndex = index },
+                onClick = {
+                    selectedItemIndex = index
+                    navController.navigate(item.title) {
+                        popUpTo(navController.graph.startDestinationId)
+                        launchSingleTop = true
+                    } },
                 label = { Text(text = item.title) },
                 icon = {
                     BadgedBox(
