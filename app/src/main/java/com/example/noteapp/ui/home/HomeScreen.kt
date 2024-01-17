@@ -20,12 +20,15 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.hilt.navigation.compose.hiltViewModel
 import com.example.noteapp.R
 
 @Composable
 fun HomeScreen() {
     Box(
-        modifier = Modifier.fillMaxSize().background(color = Color(255, 204, 255)),
+        modifier = Modifier
+            .fillMaxSize()
+            .background(color = Color(255, 204, 255)),
         contentAlignment = Alignment.Center
     ) {
         Text(modifier = Modifier

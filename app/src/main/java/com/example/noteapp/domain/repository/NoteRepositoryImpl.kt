@@ -1,6 +1,6 @@
 package com.example.noteapp.domain.repository
 
-import com.example.noteapp.domain.data.NoteDao
+/*import com.example.noteapp.domain.data.NoteDao
 import com.example.noteapp.domain.model.Note
 import kotlinx.coroutines.flow.Flow
 
@@ -22,4 +22,4 @@ class NoteRepositoryImpl(
     override suspend fun deleteNote(note: Note) {
         dao.deleteNote(note)
     }
-}
+}*/

@@ -1,6 +1,6 @@
 package com.example.noteapp.domain.repository
 
-import com.example.noteapp.domain.model.Note
+/*import com.example.noteapp.domain.model.Note
 import kotlinx.coroutines.flow.Flow
 
 interface NoteRepository {
@@ -12,4 +12,4 @@ interface NoteRepository {
     suspend fun insertNote(note: Note)
 
     suspend fun deleteNote(note: Note)
-}
+}*/

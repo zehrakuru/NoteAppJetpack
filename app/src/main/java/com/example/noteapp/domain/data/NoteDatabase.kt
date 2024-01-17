@@ -1,6 +1,6 @@
 package com.example.noteapp.domain.data
 
-import androidx.room.Database
+/*import androidx.room.Database
 import androidx.room.RoomDatabase
 import com.example.noteapp.domain.model.Note
 
@@ -14,4 +14,4 @@ abstract class NoteDatabase: RoomDatabase() {
     companion object {
         const val DATABASE_NAME = "notes_db"
     }
-}
+}*/

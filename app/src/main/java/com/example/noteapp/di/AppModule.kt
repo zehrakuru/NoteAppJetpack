@@ -1,6 +1,6 @@
 package com.example.noteapp.di
 
-import android.app.Application
+/*import android.app.Application
 import androidx.room.Room
 import com.example.noteapp.domain.data.NoteDatabase
 import com.example.noteapp.domain.repository.NoteRepository
@@ -44,4 +44,4 @@ object AppModule {
             addNote = AddNote(repository)
         )
     }
-}
+}*/

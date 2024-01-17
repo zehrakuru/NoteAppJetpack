@@ -1,6 +1,6 @@
 package com.example.noteapp.domain.usecase
 
-import com.example.noteapp.domain.model.Note
+/*import com.example.noteapp.domain.model.Note
 import com.example.noteapp.domain.repository.NoteRepository
 import com.example.noteapp.domain.util.NoteOrder
 import com.example.noteapp.domain.util.OrderType
@@ -35,4 +35,4 @@ class GetNotes(
 
         }
     }
-}
+}*/

@@ -1,6 +1,6 @@
 package com.example.noteapp.domain.model
 
-import androidx.room.Entity
+/*import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.example.noteapp.ui.theme.BabyBlue
 import com.example.noteapp.ui.theme.LightGreen
@@ -21,4 +21,4 @@ data class Note(
     }
 }
 
-class InvalidNoteException(message: String): Exception(message)
+class InvalidNoteException(message: String): Exception(message)*/

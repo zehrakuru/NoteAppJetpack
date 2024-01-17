@@ -1,6 +1,6 @@
 package com.example.noteapp.domain.data
 
-import androidx.room.Dao
+/*import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
@@ -22,4 +22,4 @@ interface NoteDao {
 
     @Delete
     suspend fun deleteNote(note:Note)
-}
+}*/
